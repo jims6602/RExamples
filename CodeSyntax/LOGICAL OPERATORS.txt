@@ -1,0 +1,7 @@
+> # ----- LOGICAL OPERATORS -----
+> cat("TRUE && FALSE = ", T && F, "\n")
+TRUE && FALSE =  FALSE 
+> cat("TRUE || FALSE = ", T || F, "\n")
+TRUE || FALSE =  TRUE 
+> cat("!TRUE = ", !T, "\n")
+!TRUE =  FALSE 

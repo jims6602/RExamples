@@ -1,0 +1,14 @@
+> # ----- ASSIGNMENT -----
+> # You can assign a value using = or <-
+> myNum = 5
+> myNum
+[1] 5
+> 
+> # Most common way to see assignment
+> my.color <- "BLUE"
+> my.color
+[1] "BLUE"
+> 
+> myString <- "Hello, World!"
+> print ( myString)
+[1] "Hello, World!"

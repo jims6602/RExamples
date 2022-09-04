@@ -1,0 +1,81 @@
+> # ----- VECTORS -----
+> # Vectors store multiple values
+> # Create a vector
+> numbers = c(3, 2, 0, 1, 8)
+> numbers
+[1] 3 2 0 1 8
+> 
+> # Get value by index 
+# numbers = c(3, 2, 0, 1, 8)
+> numbers[1]
+[1] 3
+> 
+> # Get the number of items
+# numbers = c(3, 2, 0, 1, 8)
+> length(numbers)
+[1] 5
+> 
+> # Get the last value
+> numbers[length(numbers)]
+# numbers = c(3, 2, 0, 1, 8)
+[1] 8
+> 
+> # Get everything but an index
+# numbers = c(3, 2, 0, 1, 8)
+> numbers[-1]
+
+[1] 2 0 1 8
+> 
+> # Get the 1st 2 values
+# numbers = c(3, 2, 0, 1, 8)
+> numbers[c(1,2)]
+[1] 3 2
+> 
+> # Get the 2nd and 3rd
+# numbers = c(3, 2, 0, 1, 8)
+> numbers[2:3]
+[1] 2 0
+> 
+> # Replace a value
+# numbers = c(3, 2, 0, 1, 8)
+> numbers[5] = 1
+> numbers
+[1] 3 2 0 1 1
+> 
+> # Replace the 4th and 5th with 2
+# numbers = c(3, 2, 0, 1, 8)
+> numbers[c(4,5)] = 2
+> numbers
+[1] 3 2 0 2 2
+> 
+> # sort values (decreasing can be TRUE or FALSE)
+# 3 2 0 2 2
+> sort(numbers, decreasing=TRUE)
+[1] 3 2 2 2 0
+> 
+> # Generate a sequence from 1 to 10
+> oneToTen = 1:10
+> oneToTen
+ [1]  1  2  3  4  5  6  7  8  9 10
+> 
+> # Sequence from 3 to 27 adding 3 each time
+> add3 = seq(from=3, to=27, by=3)
+> add3
+[1]  3  6  9 12 15 18 21 24 27
+> 
+> # Create 10 evens from 2
+> evens = seq(from=2, by=2, length.out=10)
+> evens
+ [1]  2  4  6  8 10 12 14 16 18 20
+> 
+> # Find out if a value is in vector
+> sprintf("4 in evens %s", 4 %in% evens)
+[1] "4 in evens TRUE"
+> 
+> # rep() repeats a value/s x, a number of times and
+> # each defines how many times to repeat each item
+> rep(x=2, times=5, each=2)
+ [1] 2 2 2 2 2 2 2 2 2 2
+> 
+> rep(x=c(1,2,3), times=2, each=2)
+ [1] 1 1 2 2 3 3 1 1 2 2 3 3

@@ -1,0 +1,30 @@
+> # ----- RELATIONAL OPERATORS -----
+> iAmTrue = TRUE
+> iAmFalse = FALSE
+> 
+> sprintf("4 == 5 : %s", 4 == 5)
+[1] "4 == 5 : FALSE"
+> sprintf("4 != 5 : %s", 4 != 5)
+[1] "4 != 5 : TRUE"
+> sprintf("4 > 5 : %s", 4 > 5)
+[1] "4 > 5 : FALSE"
+> sprintf("4 < 5 : %s", 4 < 5)
+[1] "4 < 5 : TRUE"
+> sprintf("4 >= 5 : %s", 4 >= 5)
+[1] "4 >= 5 : FALSE"
+> sprintf("4 <= 5 : %s", 4 <= 5)
+[1] "4 <= 5 : TRUE"
+> 
+> # Relational operator vector tricks
+> oneTo20 = c(1:20)
+> 
+> # Create vector of Ts and Fs depending on condition
+> isEven = oneTo20 %% 2 == 0
+> isEven
+ [1] FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE
+[20]  TRUE
+> 
+> # Create array of evens
+> justEvens = oneTo20[oneTo20 %% 2 == 0]
+> justEvens
+ [1]  2  4  6  8 10 12 14 16 18 20

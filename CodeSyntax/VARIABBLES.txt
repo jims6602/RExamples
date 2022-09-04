@@ -1,0 +1,35 @@
+> # ----- VARIABLES -----
+> # Variable names start with a letter and can contain
+> # numbers, underscores and dots
+> 
+> # Most languages use data types to define how much
+> # space to set asside in memory
+> # Variables in R are assigned R Objects
+> 
+> # Types are dynamic which means a variable names data
+> # type changes based on the data assigned to it
+> 
+> # Here are the Vector types
+> # numeric
+> print(class(4))
+[1] "numeric"
+> 
+> # integer
+> print(class(4L))
+[1] "integer"
+> 
+> # logical (TRUE, FALSE, T, F)
+> print(class(TRUE))
+[1] "logical"
+> 
+> # complex
+> print(class(1 + 4i))
+[1] "complex"
+> 
+> # character
+> print(class("Sample"))
+[1] "character"
+> 
+> # raw when converted into raw bytes
+> print(class(charToRaw("Sample")))
+[1] "raw"

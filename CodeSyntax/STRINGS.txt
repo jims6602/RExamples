@@ -1,0 +1,37 @@
+> # ----- STRINGS -----
+> str1 = "This is a string"
+> 
+> # String length
+> nchar(string1)
+Error in nchar(string1) : object 'string1' not found
+> 
+> # You can compare strings where later letters are considered
+> # greater than
+> sprintf("Dog > Egg : %s", "Dog" > "Egg")
+[1] "Dog > Egg : FALSE"
+> sprintf("Dog == Egg : %s", "Dog" == "Egg")
+[1] "Dog == Egg : FALSE"
+> 
+> # Combine strings and define sperator if any
+> str2 = paste("Owl", "Bear", sep="")
+> str2
+[1] "OwlBear"
+> 
+> # Remove bear from the string
+> substr(x=str2, start=4, stop=7)
+[1] "Bear"
+> 
+> # Substitute one string with another
+> sub(pattern="Owl", replacement="Hawk", x=str2)
+[1] "HawkBear"
+> 
+> # Substitute all matches
+> gsub(pattern="Egg", replacement="Chicken", x="Egg Egg")
+[1] "Chicken Chicken"
+> 
+> # Split string into vector
+> strVect = strsplit("A dog ran fast", " ")
+> 
+> strVect
+[[1]]
+[1] "A"    "dog"  "ran"  "fast"

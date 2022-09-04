@@ -1,0 +1,17 @@
+> # ----- ARITHMETIC OPERATORS -----
+> sprintf("4 + 5 = %d", 4 + 5)
+[1] "4 + 5 = 9"
+> sprintf("4 - 5 = %d", 4 - 5)
+[1] "4 - 5 = -1"
+> sprintf("4 * 5 = %d", 4 * 5)
+[1] "4 * 5 = 20"
+> sprintf("4 / 5 = %1.3f", 4 / 5)
+[1] "4 / 5 = 0.800"
+> 
+> # Modulus or remainder of division
+> sprintf("5 %% 4 = %d", 5 %% 4)
+[1] "5 % 4 = 1"
+> 
+> # Value raised to the exponent of the next
+> sprintf("4^2 = %d", 4^2)
+[1] "4^2 = 16"
